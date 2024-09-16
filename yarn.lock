@@ -4534,6 +4534,47 @@ __metadata:
   languageName: node
   linkType: hard
 
+"components@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "components@workspace:."
+  dependencies:
+    "@chromatic-com/storybook": "npm:^1.6.1"
+    "@rsbuild/core": "npm:^1.0.1-beta.4"
+    "@rsbuild/plugin-react": "npm:^1.0.1-beta.4"
+    "@rsbuild/plugin-svgr": "npm:^1.0.1-beta.4"
+    "@storybook/addon-actions": "npm:8.2.9"
+    "@storybook/addon-essentials": "npm:^8.2.9"
+    "@storybook/addon-interactions": "npm:^8.2.9"
+    "@storybook/addon-links": "npm:^8.2.9"
+    "@storybook/addon-onboarding": "npm:^8.2.9"
+    "@storybook/addon-webpack5-compiler-swc": "npm:^1.0.5"
+    "@storybook/blocks": "npm:^8.2.9"
+    "@storybook/react": "npm:^8.2.9"
+    "@storybook/react-webpack5": "npm:^8.2.9"
+    "@storybook/test": "npm:^8.2.9"
+    "@tailwindcss/forms": "npm:^0.5.7"
+    "@tailwindcss/typography": "npm:^0.5.13"
+    "@types/react": "npm:^18.3.3"
+    "@types/react-dom": "npm:^18.3.0"
+    autoprefixer: "npm:^10.4.19"
+    axios: "npm:^1.7.2"
+    clsx: "npm:^2.1.1"
+    filesize: "npm:10.1.4"
+    postcss: "npm:*"
+    prettier: "npm:^3.3.3"
+    react: "npm:^18.3.1"
+    react-confetti: "npm:6.1.0"
+    react-dom: "npm:^18.3.1"
+    react-router-dom: "npm:^6.25.1"
+    storybook: "npm:^8.2.9"
+    storybook-react-rsbuild: "npm:^0.0.13"
+    strip-ansi: "npm:7.1.0"
+    tailwind-merge: "npm:^2.4.0"
+    tailwindcss: "npm:^3.4.6"
+    typescript: "npm:^5.5.4"
+  languageName: unknown
+  linkType: soft
+
 "concat-map@npm:0.0.1":
   version: 0.0.1
   resolution: "concat-map@npm:0.0.1"
@@ -7733,47 +7774,6 @@ __metadata:
   checksum: 10c0/d9aa22d31f4f7680e20269db76791b41c3a32c01a373e25f8a4813b4d45f7456bfc2b6d68f752dc4aab0e0bb0721cb3d76fb678c9101cb7a16316664bc2c73fd
   languageName: node
   linkType: hard
-
-"post@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "post@workspace:."
-  dependencies:
-    "@chromatic-com/storybook": "npm:^1.6.1"
-    "@rsbuild/core": "npm:^1.0.1-beta.4"
-    "@rsbuild/plugin-react": "npm:^1.0.1-beta.4"
-    "@rsbuild/plugin-svgr": "npm:^1.0.1-beta.4"
-    "@storybook/addon-actions": "npm:8.2.9"
-    "@storybook/addon-essentials": "npm:^8.2.9"
-    "@storybook/addon-interactions": "npm:^8.2.9"
-    "@storybook/addon-links": "npm:^8.2.9"
-    "@storybook/addon-onboarding": "npm:^8.2.9"
-    "@storybook/addon-webpack5-compiler-swc": "npm:^1.0.5"
-    "@storybook/blocks": "npm:^8.2.9"
-    "@storybook/react": "npm:^8.2.9"
-    "@storybook/react-webpack5": "npm:^8.2.9"
-    "@storybook/test": "npm:^8.2.9"
-    "@tailwindcss/forms": "npm:^0.5.7"
-    "@tailwindcss/typography": "npm:^0.5.13"
-    "@types/react": "npm:^18.3.3"
-    "@types/react-dom": "npm:^18.3.0"
-    autoprefixer: "npm:^10.4.19"
-    axios: "npm:^1.7.2"
-    clsx: "npm:^2.1.1"
-    filesize: "npm:10.1.4"
-    postcss: "npm:*"
-    prettier: "npm:^3.3.3"
-    react: "npm:^18.3.1"
-    react-confetti: "npm:6.1.0"
-    react-dom: "npm:^18.3.1"
-    react-router-dom: "npm:^6.25.1"
-    storybook: "npm:^8.2.9"
-    storybook-react-rsbuild: "npm:^0.0.13"
-    strip-ansi: "npm:7.1.0"
-    tailwind-merge: "npm:^2.4.0"
-    tailwindcss: "npm:^3.4.6"
-    typescript: "npm:^5.5.4"
-  languageName: unknown
-  linkType: soft
 
 "postcss-import@npm:^15.1.0":
   version: 15.1.0
