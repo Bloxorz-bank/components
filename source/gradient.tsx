@@ -1,4 +1,4 @@
-import { clsx } from 'clsx'
+import { clsx } from 'clsx';
 
 export function Gradient({
   className,
@@ -12,7 +12,7 @@ export function Gradient({
         'bg-[linear-gradient(115deg,var(--tw-gradient-stops))] from-[#fff1be] from-[28%] via-[#ee87cb] via-[70%] to-[#b060ff] sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))]',
       )}
     />
-  )
+  );
 }
 
 export function GradientBackground() {
@@ -26,5 +26,5 @@ export function GradientBackground() {
         )}
       />
     </div>
-  )
+  );
 }

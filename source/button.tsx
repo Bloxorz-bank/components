@@ -1,6 +1,5 @@
-import * as Headless from '@headlessui/react'
-import { clsx } from 'clsx'
-import { Link } from './link'
+import * as Headless from '@headlessui/react';
+import { clsx } from 'clsx';
 
 const variants = {
   primary: clsx(
@@ -22,25 +21,46 @@ const variants = {
     'whitespace-nowrap text-sm font-medium text-gray-950',
     'data-[disabled]:bg-transparent data-[hover]:bg-gray-50 data-[disabled]:opacity-40',
   ),
-}
+};
 
 type ButtonProps = {
-  variant?: keyof typeof variants
-} & (
-  | React.ComponentPropsWithoutRef<typeof Link>
-  | (Headless.ButtonProps & { href?: undefined })
-)
+  variant?: keyof typeof variants;
+  href?: string;
+  disabled?: boolean;
+} & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
+/**
+ * Button component supporting different variants and hrefs.
+ * - Renders as `<button>` by default.
+ * - If `href` is provided, renders as an `<a>` for links.
+ */
 export function Button({
   variant = 'primary',
   className,
+  href,
+  disabled,
   ...props
 }: ButtonProps) {
-  className = clsx(className, variants[variant])
+  className = clsx(className, variants[variant], {
+    'cursor-not-allowed opacity-40': disabled,
+  });
 
-  if (typeof props.href === 'undefined') {
-    return <Headless.Button {...props} className={className} />
+  if (href) {
+    return (
+      <a
+        href={href}
+        className={className}
+        onClick={(e) => disabled && e.preventDefault()}
+        {...props}
+      >
+        {props.children}
+      </a>
+    );
   }
 
-  return <Link {...props} className={className} />
+  return (
+    <button className={className} disabled={disabled} {...props}>
+      {props.children}
+    </button>
+  );
 }

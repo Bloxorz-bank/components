@@ -41,6 +41,7 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
+    "@module-federation/enhanced": "^0.6.6",
     "@storybook/addon-actions": "8.2.9",
     "axios": "^1.7.2",
     "clsx": "^2.1.1",

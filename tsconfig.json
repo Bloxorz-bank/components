@@ -14,8 +14,8 @@
     "allowImportingTsExtensions": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["bin/*"]
     }
   },
-  "include": ["src", "source"]
+  "include": ["bin", "source"]
 }

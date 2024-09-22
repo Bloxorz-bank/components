@@ -1,22 +1,11 @@
-import { Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LocalButton from './Button';
 
-import Loading from './source/loading';
-import routes from '@/routes';
-import { Layout } from './source/layout';
+const App = () => (
+  <div>
+    <h1>Basic Host-Remote</h1>
+    <h2>Remote</h2>
+    <LocalButton />
+  </div>
+);
 
-export function App() {
-  return (
-    <Router>
-      <Layout>
-        <Suspense fallback={<Loading />}>
-          <Routes>
-            {routes.map(({ Component, ...props }, index) => {
-              return <Route key={index} element={<Component />} {...props} />;
-            })}
-          </Routes>
-        </Suspense>
-      </Layout>
-    </Router>
-  );
-}
+export default App;
