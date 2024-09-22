@@ -2,13 +2,11 @@
   "name": "components",
   "version": "1.1.0",
   "files": [
-    "./src/components/*"
+    "source/"
   ],
   "exports": {
-    "./": "./src/components/"
+    "./*": "./source/*"
   },
-  "repository": "https://github.com/alonronin/react-tailwind-webpack5-boilerplate.git",
-  "author": "alonronin <alon@ronin.co.il>",
   "license": "Unlicense",
   "scripts": {
     "serve-static": "rsbuild build && npx serve dist -s",

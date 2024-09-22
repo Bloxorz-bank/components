@@ -1,8 +1,6 @@
-'use client'
-
-import { clsx } from 'clsx'
-import { motion } from 'framer-motion'
-import { Subheading } from './text'
+import { clsx } from 'clsx';
+import { motion } from 'framer-motion';
+import { Subheading } from './text';
 
 export function BentoCard({
   dark = false,
@@ -13,13 +11,13 @@ export function BentoCard({
   graphic,
   fade = [],
 }: {
-  dark?: boolean
-  className?: string
-  eyebrow: React.ReactNode
-  title: React.ReactNode
-  description: React.ReactNode
-  graphic: React.ReactNode
-  fade?: ('top' | 'bottom')[]
+  dark?: boolean;
+  className?: string;
+  eyebrow: React.ReactNode;
+  title: React.ReactNode;
+  description: React.ReactNode;
+  graphic: React.ReactNode;
+  fade?: ('top' | 'bottom')[];
 }) {
   return (
     <motion.div
@@ -55,5 +53,5 @@ export function BentoCard({
         </p>
       </div>
     </motion.div>
-  )
+  );
 }

@@ -1,17 +1,15 @@
-'use client'
-
-import { clsx } from 'clsx'
-import { motion } from 'framer-motion'
-import { Mark } from './logo'
+import { clsx } from 'clsx';
+import { motion } from 'framer-motion';
+import { Mark } from './logo';
 
 function Circle({
   size,
   delay,
   opacity,
 }: {
-  size: number
-  delay: number
-  opacity: string
+  size: number;
+  delay: number;
+  opacity: string;
 }) {
   return (
     <motion.div
@@ -36,7 +34,7 @@ function Circle({
         'ring-1 ring-inset ring-blue-500/[8%]',
       )}
     />
-  )
+  );
 }
 
 function Circles() {
@@ -48,7 +46,7 @@ function Circles() {
       <Circle size={144} opacity="10%" delay={0} />
       <div className="absolute inset-0 bg-gradient-to-t from-white to-35%" />
     </div>
-  )
+  );
 }
 
 function MainLogo() {
@@ -56,7 +54,7 @@ function MainLogo() {
     <div className="absolute left-44 top-32 flex size-16 items-center justify-center rounded-full bg-white shadow ring-1 ring-black/5">
       <Mark className="h-9 fill-black" />
     </div>
-  )
+  );
 }
 
 function Logo({
@@ -65,10 +63,10 @@ function Logo({
   top,
   hover,
 }: {
-  src: string
-  left: number
-  top: number
-  hover: { x: number; y: number; rotate: number; delay: number }
+  src: string;
+  left: number;
+  top: number;
+  hover: { x: number; y: number; rotate: number; delay: number };
 }) {
   return (
     <motion.img
@@ -92,7 +90,7 @@ function Logo({
       style={{ left, top } as React.CSSProperties}
       className="absolute size-16 rounded-full bg-white shadow ring-1 ring-black/5"
     />
-  )
+  );
 }
 
 export function LogoCluster() {
@@ -139,5 +137,5 @@ export function LogoCluster() {
         />
       </div>
     </div>
-  )
+  );
 }

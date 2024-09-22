@@ -1,9 +1,9 @@
 import { Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Loading from 'components/Loading';
+import Loading from './source/loading';
 import routes from '@/routes';
-import { Layout } from 'components/Layout';
+import { Layout } from './source/layout';
 
 export function App() {
   return (

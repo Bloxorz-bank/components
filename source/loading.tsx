@@ -1,5 +1,5 @@
-import { cn } from '@/utils';
-import SpinningIcon from '@/assets/oval.svg?react';
+import { cn } from '../utils';
+import SpinningIcon from '../assets/oval.svg';
 import { ComponentProps } from 'react';
 
 const Loading = ({ className, ...props }: ComponentProps<'div'>) => (
