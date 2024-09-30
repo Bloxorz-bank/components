@@ -51,7 +51,18 @@ export default defineConfig({
           exposes: {
             './button': './source/button.tsx',
           },
-          shared: ['react', 'react-dom'],
+          shared: {
+            react: {
+              eager: true,
+              singleton: true,
+              requiredVersion: false,
+            },
+            'react-dom': {
+              eager: true,
+              singleton: true,
+              requiredVersion: false,
+            },
+          },
         }),
       ]);
     },
